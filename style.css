@@ -1,0 +1,18 @@
+/* 1. Body background and text font */
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* 2. Main heading color */
+h1 {
+    color: #2c3e50;
+}
+
+/* 3. Section padding and card styling */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
