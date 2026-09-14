@@ -3,14 +3,42 @@ body {
     background-color: #f4f4f9;
     font-family: Arial, sans-serif;
     margin: 20px;
+    line-height: 1.6;
 }
 
-/* 2. Main heading color */
 h1 {
     color: #2c3e50;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* 3. Section padding and card styling */
+h2 {
+    color: #0d9488;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 5px;
+}
+
+p {
+    color: #475569;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    color:#2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 section {
     background-color: #ffffff;
     padding: 20px;
