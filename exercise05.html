@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercise 04 - HTML Structure and CSS Practice">
+    <title>Brandon Zumarraga | Exercise 05</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d98;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 15px;
+        }
+
+        /* Nav Menu */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        /* STyling link */
+        nav a {
+            display: inline-block;
+            color: white;
+            background-color: #a50044;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Visual Change */
+        nav a:hover {
+            background-color: #db004c;
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .info-box {
+            height: auto;
+            width: 90%;
+            margin: 15px 0;     
+            padding: 15px;      
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+
+        #places {
+            width: 80%;
+            margin: 30px auto;  
+            padding: 20px;      
+            border: 2px solid #000;
+            background-color: #f4f4f4;
+        }
+
+        #places a {
+            color: #004d98;
+            font-weight: bold;
+        }
+
+        #places a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <header>
+        <h1>My Personal Page: Exploring Barcelona</h1>
+        
+        <!-- FLEXBOX NAVIGATION -->
+        <nav>
+            <ul>
+                <!-- Relative Paths -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exercise03.html">Exercise 03</a></li>
+                <li><a href="#places">Top Places</a></li>
+                
+                <!-- Absolute URL -->
+                <li><a href="https://www.fcbarcelona.com/en/" target="_blank" rel="noopener noreferrer">FC Barcelona</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <article class="info-box">
+                <p>Welcome to my first webpage! I am learning HTML markup and publishing.</p>
+                <img src="https://www.attica21hotels.com/wp-content/uploads/2023/01/logan-armstrong-hVhfqhDYciU-unsplash-1-1600x700.jpg" alt="This is Barcelona" width="500">
+            </article>
+        </section>
+
+        <h1>This is Barcelona</h1>
+
+        <section>
+            <h2>Location & capital</h2>
+            <article class="info-box">
+                <p>It is located in northeastern Spain</p>
+            </article>
+
+            <h2>What</h2>
+            <article class="info-box">
+                <p>Barcelona is the capital city of Catalonia and a major cultural and economic center.</p>
+            </article>
+        </section>
+
+        <section id="places">   
+            <h2>Top 5 places to visit in Barcelona</h2> 
+            <ul>
+                <li>Basilica of the Sagrada Familia</li>
+                <li>Park Guell</li>
+                <li>Gothic Quarter (Barri Gotic)</li>
+                <li>Casa Batllo</li>
+                <!-- Absolute URL -->
+                <li><a href="https://www.fcbarcelona.com/en/club/facilities/camp-nou" target="_blank" rel="noopener noreferrer">FC Barcelona Stadium and Museum</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#top">Back to top ↑</a></p>
+    </footer>
+
+</body>
+</html>
