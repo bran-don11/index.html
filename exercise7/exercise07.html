@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Library Programs & Events</title>
+
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="header-content">
+            <span class="library-tag">Oakridge Public Library</span>
+            <h1>Community Programs & Events</h1>
+        </div>
+    </header>
+
+    <!-- Main Container Layout (Flexbox Row on Desktop) -->
+    <div class="page-container">
+        
+        <!-- Left / Main Column: Upcoming Programs Table -->
+        <main class="main-content">
+            <section class="programs-section">
+                <h2>Upcoming Programs</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <caption>Schedule of upcoming library events and workshops</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Program</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Audience</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="program-name">Community Book Club</td>
+                                <td>Oct. 8</td>
+                                <td>6:30 PM</td>
+                                <td>Room A</td>
+                                <td><span class="badge">Adults</span></td>
+                            </tr>
+                            <tr>
+                                <td class="program-name">Family Story Time</td>
+                                <td>Oct. 10</td>
+                                <td>10:00 AM</td>
+                                <td>Children's Room</td>
+                                <td><span class="badge">Families</span></td>
+                            </tr>
+                            <tr>
+                                <td class="program-name">Genealogy Workshop</td>
+                                <td>Oct. 12</td>
+                                <td>2:00 PM</td>
+                                <td>Room B</td>
+                                <td><span class="badge">Adults</span></td>
+                            </tr>
+                            <tr>
+                                <td class="program-name">Intro to 3D Printing</td>
+                                <td>Oct. 15</td>
+                                <td>6:00 PM</td>
+                                <td>Makerspace</td>
+                                <td><span class="badge">Teens &amp; Adults</span></td>
+                            </tr>
+                            <tr>
+                                <td class="program-name">Local History Talk</td>
+                                <td>Oct. 18</td>
+                                <td>1:00 PM</td>
+                                <td>Auditorium</td>
+                                <td><span class="badge">Everyone</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar Section Layout (Flexbox Column) -->
+        <aside class="sidebar-content">
+            
+            <!-- Registration Form Area -->
+            <section class="registration-card">
+                <h2>Register for a Program</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="e.g., Jane Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="program">Select Program</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="book-club">Community Book Club</option>
+                            <option value="story-time">Family Story Time</option>
+                            <option value="genealogy">Genealogy Workshop</option>
+                            <option value="3d-printing">Intro to 3D Printing</option>
+                            <option value="history-talk">Local History Talk</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="attendance-fieldset">
+                        <legend>Attendance Mode</legend>
+                        <div class="radio-option">
+                            <input type="radio" id="in-person" name="attendance" value="in-person" checked>
+                            <label for="in-person">In person</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="online" name="attendance" value="online">
+                            <label for="online">Online</label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="submit-btn">Register Now</button>
+                </form>
+            </section>
+
+            <!-- Additional Information Area -->
+            <section class="info-card">
+                <h2>Library Information</h2>
+                <div class="info-item">
+                    <strong>Hours of Operation:</strong>
+                    <p>Mon–Thu: 9:00 AM – 8:00 PM<br>Fri–Sat: 9:00 AM – 5:00 PM<br>Sun: Closed</p>
+                </div>
+                <div class="info-item">
+                    <strong>Questions or Accommodations?</strong>
+                    <p>Contact our events team at <a href="mailto:events@oakridgelibrary.org">events@oakridgelibrary.org</a> or call (555) 019-2831.</p>
+                </div>
+            </section>
+
+        </aside>
+    </div>
+
+    <!-- Footer Area -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Oakridge Public Library. Serving our community with accessible lifelong learning.</p>
+    </footer>
+
+</body>
+</html>
