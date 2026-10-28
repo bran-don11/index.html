@@ -118,4 +118,9 @@ input[type="submit"]:hover {
     input[type="submit"] {
         width: 100%;
     }
+
+    a:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible {
+        outline: 3px solid #2c3e50;
+        outline-offset: 2px;
+    }
 }
