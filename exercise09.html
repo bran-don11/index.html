@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Programs - Exercise 09 (Accessibility)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Library Programs</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Upcoming Programs</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Schedule of Library Events for October</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Program</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Audience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Community Book Club</td>
+                            <td>Oct. 8</td>
+                            <td>6:30 PM</td>
+                            <td>Room A</td>
+                            <td>Adults</td>
+                        </tr>
+                        <tr>
+                            <td>Family Story Time</td>
+                            <td>Oct. 10</td>
+                            <td>10:00 AM</td>
+                            <td>Children's Room</td>
+                            <td>Families</td>
+                        </tr>
+                        <tr>
+                            <td>Genealogy Workshop</td>
+                            <td>Oct. 12</td>
+                            <td>2:00 PM</td>
+                            <td>Room B</td>
+                            <td>Adults</td>
+                        </tr>
+                        <tr>
+                            <td>Intro to 3D Printing</td>
+                            <td>Oct. 15</td>
+                            <td>6:00 PM</td>
+                            <td>Makerspace</td>
+                            <td>Teens & Adults</td>
+                        </tr>
+                        <tr>
+                            <td>Local History Talk</td>
+                            <td>Oct. 18</td>
+                            <td>1:00 PM</td>
+                            <td>Auditorium</td>
+                            <td>Everyone</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Register for a Program</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program-select">Program:</label>
+                    <select id="program-select" name="program">
+                        <option value="">Select a program</option>
+                        <option value="book-club">Community Book Club</option>
+                        <option value="story-time">Family Story Time</option>
+                        <option value="genealogy">Genealogy Workshop</option>
+                        <option value="3d-printing">Intro to 3D Printing</option>
+                        <option value="history-talk">Local History Talk</option>
+                    </select>
+                </div>
+
+                <fieldset style="border:none; padding:0; margin:0;">
+                    <legend style="font-weight:bold; margin-bottom:5px;">Attendance Type:</legend>
+                    <label><input type="radio" name="attendance" value="in-person"> In person</label><br>
+                    <label><input type="radio" name="attendance" value="online"> Online</label>
+                </fieldset>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Questions? Contact the library...</p>
+    </footer>
+
+</body>
+</html>
