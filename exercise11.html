@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Programs - Exercise 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Library Programs</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Upcoming Programs</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Schedule of Library Events for October</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Program</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Community Book Club</td>
+                            <td>Oct. 8</td>
+                            <td>6:30 PM</td>
+                            <td>Room A</td>
+                            <td><button class="details-btn" data-program="book-club">View details</button></td>
+                        </tr>
+                        <tr>
+                            <td>Family Story Time</td>
+                            <td>Oct. 10</td>
+                            <td>10:00 AM</td>
+                            <td>Children's Room</td>
+                            <td><button class="details-btn" data-program="story-time">View details</button></td>
+                        </tr>
+                        <tr>
+                            <td>Genealogy Workshop</td>
+                            <td>Oct. 12</td>
+                            <td>2:00 PM</td>
+                            <td>Room B</td>
+                            <td><button class="details-btn" data-program="genealogy">View details</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Program Details Section -->
+        <section id="program-details-section" style="margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #2c3e50;">
+            <h2>Program Details</h2>
+            <p id="details-instructions">Select a program above to learn more about its description, audience, and what to bring.</p>
+            
+            <div id="details-content" style="display: none;">
+                <h3 id="detail-title"></h3>
+                <p><strong>Description:</strong> <span id="detail-desc"></span></p>
+                <p><strong>Audience:</strong> <span id="detail-audience"></span></p>
+                <p><strong>What to Bring:</strong> <span id="detail-bring"></span></p>
+                <button id="quick-register-btn" style="margin-top: 10px; padding: 8px 15px; background: #2c3e50; color: white; border: none; border-radius: 4px; cursor: pointer;">Register for this program</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Register for a Program</h2>
+            <form action="#" method="POST">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; box-sizing: border-box;">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" required style="width: 100%; padding: 8px; box-sizing: border-box;">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="program-select">Program:</label><br>
+                    <select id="program-select" name="program" style="width: 100%; padding: 8px; box-sizing: border-box;">
+                        <option value="">Select a program</option>
+                        <option value="book-club">Community Book Club</option>
+                        <option value="story-time">Family Story Time</option>
+                        <option value="genealogy">Genealogy Workshop</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Register" style="padding: 10px 20px; background: #2c3e50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Questions? Contact the library...</p>
+    </footer>
+
+    <script src="scriptExercise11.js"></script>
+</body>
+</html>
