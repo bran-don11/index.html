@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10 - Interactive JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Library Book Recommendation Generator</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Looking for your next read?</h2>
+            <p>Click the button below to discover a random book recommendation from our library collection!</p>
+            
+            <div id="recommendation-card" style="margin: 20px 0; padding: 15px; border-left: 4px solid #2c3e50; background: #f9f9f9;">
+                <h3 id="book-title">Click the button to reveal a book!</h3>
+                <p id="book-author">Author information will appear here.</p>
+            </div>
+
+            <button id="recommend-btn">Get Book Recommendation</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Questions? Contact the library...</p>
+    </footer>
+
+    <!-- Connect external JavaScript file before closing body tag -->
+    <script src="script.js"></script>
+</body>
+</html>
