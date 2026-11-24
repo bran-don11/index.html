@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Programs - Exercise 13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Library Programs</h1>
+        <p>Explore upcoming events, view program details, and preview registration.</p>
+    </header>
+
+    <main id="main-content">
+        <section aria-labelledby="programs-heading">
+            <h2 id="programs-heading">Upcoming Programs</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Schedule of Library Events</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Program</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Community Book Club</td>
+                            <td>Oct. 8</td>
+                            <td>6:30 PM</td>
+                            <td>Room A</td>
+                            <td><button type="button" class="details-btn" data-program="book-club">View details</button></td>
+                        </tr>
+                        <tr>
+                            <td>Family Story Time</td>
+                            <td>Oct. 10</td>
+                            <td>10:00 AM</td>
+                            <td>Children's Room</td>
+                            <td><button type="button" class="details-btn" data-program="story-time">View details</button></td>
+                        </tr>
+                        <tr>
+                            <td>Genealogy Workshop</td>
+                            <td>Oct. 12</td>
+                            <td>2:00 PM</td>
+                            <td>Room B</td>
+                            <td><button type="button" class="details-btn" data-program="genealogy">View details</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="program-details-section" aria-labelledby="details-heading">
+            <h2 id="details-heading">Program Details</h2>
+            <p id="details-instructions">Select a program above to learn more about the session, audience, and what to bring.</p>
+            <div id="details-content" hidden>
+                <h3 id="detail-title"></h3>
+                <p><strong>Description:</strong> <span id="detail-desc"></span></p>
+                <p><strong>Audience:</strong> <span id="detail-audience"></span></p>
+                <p><strong>What to Bring:</strong> <span id="detail-bring"></span></p>
+                <button type="button" id="quick-register-btn">Register for this program</button>
+            </div>
+        </section>
+
+        <section aria-labelledby="register-heading">
+            <h2 id="register-heading">Register for a Program</h2>
+            <form id="registration-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program-select">Program:</label>
+                    <select id="program-select" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="book-club">Community Book Club</option>
+                        <option value="story-time">Family Story Time</option>
+                        <option value="genealogy">Genealogy Workshop</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Attendance Preference:</legend>
+                    <div>
+                        <input type="radio" id="in-person" name="attendance" value="In person" checked>
+                        <label for="in-person">In person</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="online" name="attendance" value="Online">
+                        <label for="online">Online</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit Request</button>
+            </form>
+
+            <div id="confirmation-message" role="status" aria-live="polite" hidden></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Questions? Contact the library desk for assistance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
