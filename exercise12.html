@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Programs - Exercise 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Library Programs</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Register for a Program</h2>
+            <form id="registration-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program-select">Program:</label>
+                    <select id="program-select" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="book-club">Community Book Club</option>
+                        <option value="story-time">Family Story Time</option>
+                        <option value="genealogy">Genealogy Workshop</option>
+                        <option value="3d-printing">Intro to 3D Printing</option>
+                        <option value="history-talk">Local History Talk</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Attendance Preference:</legend>
+                    <div>
+                        <input type="radio" id="in-person" name="attendance" value="in-person" checked>
+                        <label for="in-person">In person</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="online" name="attendance" value="online">
+                        <label for="online">Online</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <div id="confirmation-message" role="status" aria-live="polite" style="display: none; margin-top: 20px; padding: 15px; border-left: 4px solid #2c3e50; background: #f4f4f9;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Questions? Contact the library.</p>
+    </footer>
+
+    <script src="scriptExercise12.js"></script>
+</body>
+</html>
